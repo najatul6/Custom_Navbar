@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ================== TAILWIND STYLES ======================== */
+@layer utilities {
+  /* ===== UTILITIES */
+  .gradient-text {
+    @apply bg-purple-gradient bg-cover bg-clip-text text-transparent;
+  }
+  .header{
+    @apply fixed top-0 left-0 w-full py-5 px-[10%] bg-purple-500 flex justify-between items-center z-[100]
+  }
+  .logo{
+    @apply text-4xl text-white font-bold
+  }
+  .nav-list{
+    @apply flex gap-6
+  }
+  .nav-link{
+    @apply text-white font-medium text-xl
+  }
+}

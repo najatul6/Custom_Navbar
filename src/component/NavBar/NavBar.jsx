@@ -1,26 +1,25 @@
-import { IoClose, IoMenu } from "react-icons/io5";
 import { routes } from "../../Utils/utils";
-import Links from "../Links/Links";
-import { useState } from "react";
 
 const NavBar = () => {
-    const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="p-6">
+    <header className="header">
+      <a href="/" className="logo">
+        Logo
+      </a>
 
-        {/* Menu Icon  */}
-        <div className="md:hidden text-2xl border-2 inline-block rounded-lg shadow-2xl " onClick={()=>setIsOpen(!isOpen)}>
-            {
-                isOpen ? <IoMenu /> : <IoClose  />
-            }
-
-        
-        </div>
-
-      <ul className={`md:flex absolute md:static  duration-500 ${isOpen? '-top-96': 'top-20 w-40'}`}>
-        {routes?.map((route) => <Links key={route?.id} route={route}/>)}
-      </ul>
-    </nav>
+      {/* Navbar Section  */}
+      <nav className="nav">
+        <ul className="nav-list">
+          {routes?.map((route) => (
+            <li key={route?.id} className="nav-item">
+              <a href={route?.path} className="nav-link">
+                {route?.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 };
 
