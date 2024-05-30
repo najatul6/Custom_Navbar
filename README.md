@@ -60,4 +60,4 @@ This project is a responsive and sticky navigation bar built with React, Tailwin
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/najatul6/responsive-sticky-navbar.git
+   git clone https://github.com/najatul6/Custom_Navbar.git
