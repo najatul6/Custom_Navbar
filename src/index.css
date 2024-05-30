@@ -2,22 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ================== TAILWIND STYLES ======================== */
-@layer utilities {
-  /* ===== UTILITIES */
-  .gradient-text {
-    @apply bg-purple-gradient bg-cover bg-clip-text text-transparent;
-  }
-  .header{
-    @apply fixed top-0 left-0 w-full py-5 px-[10%] bg-purple-500 flex justify-between items-center z-[100]
-  }
-  .logo{
-    @apply text-4xl text-white font-bold
-  }
-  .nav-list{
-    @apply flex gap-6
-  }
-  .nav-link{
-    @apply text-white font-medium text-xl
-  }
+body {
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f09819,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f09819,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
+
