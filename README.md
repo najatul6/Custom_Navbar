@@ -4,16 +4,31 @@
 ### Desktop View
 ![Desktop View](https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/large%20device.png)
 
-<div style="display: flex; flex-direction: column; gap: 10px;">
-  <div style="flex: 1;">
-    <h3>Tablet and Mobile View</h3>
-    <img src="https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/small%20device.png" alt="Tablet and Mobile View">
-  </div>
-  <div style="flex: 1;">
-    <h3>Toggle View</h3>
-    <img src="https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/on%20screen.png" alt="Toggle View">
-  </div>
+
+<table align="center" style="background-color:#124453"><tr><td valign="top" width="50%">
+
+
+<h2 align="center"> Tablet and Mobile View</h2>
+
+<div align="center">
+
+![](https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/small%20device.png)
+
 </div>
+
+</td>
+<td valign="top" width="50%">
+
+<h2 align="center"> Toggle View </h2>
+
+<div align="center">
+
+![](https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/on%20screen.png)
+
+</div>
+
+</td></tr></table>
+
 ## Acknowledgements
 
 - [Tailwind CSS](https://tailwindcss.com/)
