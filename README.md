@@ -10,7 +10,7 @@
 
 <h2 align="center"> Tablet and Mobile View</h2>
 
-<div align="center">
+<div align="center" height="100%">
 
 ![](https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/small%20device.png)
 
@@ -21,7 +21,7 @@
 
 <h2 align="center"> Toggle View </h2>
 
-<div align="center">
+<div align="center" height="100%">
 
 ![](https://github.com/najatul6/Custom_Navbar/blob/main/src/assets/on%20screen.png)
 
