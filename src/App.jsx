@@ -10,7 +10,7 @@ function App() {
      <div className="mb-24">
      <NavBar/>
      </div>
-     <div className="my-72">
+     <div className="my-72 h-[100vh]">
      <SecondNavBar/>
      </div>
     
