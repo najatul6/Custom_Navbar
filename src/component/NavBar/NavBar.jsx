@@ -37,9 +37,9 @@ const NavBar = () => {
           ))}
         </ul>
       </nav>
-      <button className="hover:bg-white hover:text-yellow-700 border-2 rounded-xl text-lg lg:text-xl capitalize font-bold text-white px-5 py-2 ml-5 md:ml-[200px] lg:ml-0">
-        Click here
-      </button>
+      <a href="/" className="hover:bg-white hover:text-yellow-700 border-2 rounded-xl text-lg lg:text-xl capitalize font-bold text-white px-5 py-2 ml-5 md:ml-[200px] lg:ml-0">
+        Open app
+      </a>
     </header>
   );
 };
