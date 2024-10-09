@@ -8,6 +8,8 @@ export default {
     extend: {
       colors:{
         'gradient-back':'#0000001a',
+        primary:"#ff8901",
+        secondary:"#fb923c",
       },
       container:{
         center:true,
