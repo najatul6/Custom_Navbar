@@ -2,8 +2,12 @@ import { AiFillAndroid } from "react-icons/ai";
 import { NavMenu } from "../../Utils/utils";
 import { CiSearch } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
+import { MdClose, MdMenu } from "react-icons/md";
+import { useState } from "react";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const ThirdMenu = () => {
+    const [isOpen,setIsOpen] = useState(false)
   return (
     <>
       <nav>
@@ -39,9 +43,16 @@ const ThirdMenu = () => {
             </button>
           </div>
           {/* Mobile hamburger Menu Section  */}
+          <div className="md:hidden" onClick={()=>setIsOpen(!isOpen)}>
+            {
+                isOpen? <MdClose className="text-4xl"/> : <MdMenu className="text-4xl"/>
+            }
+            
+          </div>
         </div>
       </nav>
       {/* Mobile Sidebar section  */}
+      <ResponsiveMenu open={isOpen}/>
     </>
   );
 };
