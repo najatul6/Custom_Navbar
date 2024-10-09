@@ -8,10 +8,17 @@ import ResponsiveMenu from "./ResponsiveMenu";
 
 const ThirdMenu = () => {
     const [isOpen,setIsOpen] = useState(false)
+    const absolute={
+        position:"absolute",
+        top:0,
+        left:0,
+        width:"100%",
+        height:"100vh",
+    }
   return (
     <>
       <nav>
-        <div className="container flex justify-between items-center py-8">
+        <div className="container relative flex justify-between items-center py-8 bg-gradient-back backdrop-blur-[50px]">
           {/* Logo Section  */}
           <div className="text-2xl font-bold uppercase flex items-center gap-2">
             <AiFillAndroid className="text-white" />
@@ -52,7 +59,7 @@ const ThirdMenu = () => {
         </div>
       </nav>
       {/* Mobile Sidebar section  */}
-      <ResponsiveMenu open={isOpen}/>
+      <ResponsiveMenu open={isOpen} absolute={absolute}/>
     </>
   );
 };
