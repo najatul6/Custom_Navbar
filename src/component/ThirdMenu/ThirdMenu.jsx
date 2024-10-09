@@ -1,6 +1,7 @@
 import { AiFillAndroid } from "react-icons/ai";
 import { NavMenu } from "../../Utils/utils";
 import { CiSearch } from "react-icons/ci";
+import { PiShoppingCartThin } from "react-icons/pi";
 
 const ThirdMenu = () => {
   return (
@@ -9,9 +10,9 @@ const ThirdMenu = () => {
         <div className="container flex justify-between items-center py-8">
           {/* Logo Section  */}
           <div className="text-2xl font-bold uppercase flex items-center gap-2">
-            <AiFillAndroid />
+            <AiFillAndroid className="text-white" />
             <p>Android</p>
-            <p className="text-secondary">Hub</p>
+            <p className="text-white">Hub</p>
           </div>
           {/* Menu Section  */}
           <div className="hidden md:block">
@@ -26,9 +27,15 @@ const ThirdMenu = () => {
             </ul>
           </div>
           {/* Icons Section  */}
-          <div>
-            <button className="text-2xl hover:text-primary hover:bg-white p-2 rounded-full">
+          <div className="flex items-center gap-4">
+            <button className="text-2xl text-white hover:text-primary hover:bg-white p-2 rounded-full duration-200">
                 <CiSearch/>
+            </button>
+            <button className="text-2xl text-white hover:text-primary hover:bg-white p-2 rounded-full duration-200">
+                <PiShoppingCartThin/>
+            </button>
+            <button className="hidden md:block font-semibold text-white border-2 rounded-md border-white px-6 py-2 duration-200 hover:bg-white hover:text-primary">
+               Login
             </button>
           </div>
           {/* Mobile hamburger Menu Section  */}
