@@ -15,9 +15,7 @@ function App() {
       <div className="mt-72">
         <ThirdMenu/>
       </div>
-      <div className="mt-72">
-        <FourthMenu/>
-      </div>
+      
     </>
   );
 }
