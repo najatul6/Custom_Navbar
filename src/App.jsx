@@ -1,3 +1,4 @@
+import FourthMenu from "./component/FourthMenu/FourthMenu";
 import NavBar from "./component/NavBar/NavBar";
 import SecondNavBar from "./component/SecondNavBar/SecondNavBar";
 import ThirdMenu from "./component/ThirdMenu/ThirdMenu";
@@ -13,6 +14,9 @@ function App() {
       </div>
       <div className="mt-72">
         <ThirdMenu/>
+      </div>
+      <div className="mt-72">
+        <FourthMenu/>
       </div>
     </>
   );
